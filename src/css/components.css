@@ -1,0 +1,86 @@
+/*спільні параметри, боді і контейнер і тд */
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans'),
+    url('./fonts/DMSans-VariableFont_opsz_wght.ttf') format('truetype');
+  font-display: swap;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--primary-black-color);
+  color: var(--primary-white-color);
+}
+
+.container {
+  min-width: 320px;
+  max-width: var(--mobile);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: var(--tablet);
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1270px;
+    padding: 0 15px;
+  }
+}
+
+.section {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-bottom: 150px;
+  }
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .section-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.accent-text {
+  color: var(--accent-color);
+}
